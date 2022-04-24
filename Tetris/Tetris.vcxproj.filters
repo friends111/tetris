@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Tetris">
+      <UniqueIdentifier>{fa1c542b-cc4c-4412-9aa1-0e8da26c3e78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tetris">
+      <UniqueIdentifier>{1556d3cf-b6a2-42e7-ac88-9700af9c964d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\OpenGLWrapper">
+      <UniqueIdentifier>{a6c87f0d-2429-4391-85f5-3af050a53175}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\OpenGLWrapper">
+      <UniqueIdentifier>{5e04690f-45f5-4a16-92e6-9f32def03286}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Geometry">
+      <UniqueIdentifier>{d35f2cc8-c207-4d69-a785-4aa3ce6345be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Geometry">
+      <UniqueIdentifier>{bb29d941-a20e-498a-ae1e-c3bed585ada6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BufferObject.cpp">
+      <Filter>Source Files\OpenGLWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="FragmentShader.cpp">
+      <Filter>Source Files\OpenGLWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="IndicesBufferObject.cpp">
+      <Filter>Source Files\OpenGLWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderProgram.cpp">
+      <Filter>Source Files\OpenGLWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Source Files\OpenGLWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexBufferObject.cpp">
+      <Filter>Source Files\OpenGLWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexArrayObject.cpp">
+      <Filter>Source Files\OpenGLWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexShader.cpp">
+      <Filter>Source Files\OpenGLWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="Monomino.cpp">
+      <Filter>Source Files\Tetris</Filter>
+    </ClCompile>
+    <ClCompile Include="Playfield.cpp">
+      <Filter>Source Files\Tetris</Filter>
+    </ClCompile>
+    <ClCompile Include="Polyomino.cpp">
+      <Filter>Source Files\Tetris</Filter>
+    </ClCompile>
+    <ClCompile Include="Tetris.cpp">
+      <Filter>Source Files\Tetris</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tetrimino.cpp">
+      <Filter>Source Files\Tetris</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureObject.cpp">
+      <Filter>Source Files\OpenGLWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="Quadrilateral.cpp">
+      <Filter>Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangle.cpp">
+      <Filter>Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="TexturedQuadrilateral.cpp">
+      <Filter>Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Triangle.cpp">
+      <Filter>Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="FontRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageSystem.cpp">
+      <Filter>Source Files\Tetris</Filter>
+    </ClCompile>
+    <ClCompile Include="ScoreSystem.cpp">
+      <Filter>Source Files\Tetris</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OpenGLWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexShader.h">
+      <Filter>Header Files\OpenGLWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexArrayObject.h">
+      <Filter>Header Files\OpenGLWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexBufferObject.h">
+      <Filter>Header Files\OpenGLWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderProgram.h">
+      <Filter>Header Files\OpenGLWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Header Files\OpenGLWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="IndicesBufferObject.h">
+      <Filter>Header Files\OpenGLWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="FragmentShader.h">
+      <Filter>Header Files\OpenGLWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="BufferObject.h">
+      <Filter>Header Files\OpenGLWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="Monomino.h">
+      <Filter>Header Files\Tetris</Filter>
+    </ClInclude>
+    <ClInclude Include="Playfield.h">
+      <Filter>Header Files\Tetris</Filter>
+    </ClInclude>
+    <ClInclude Include="Polyomino.h">
+      <Filter>Header Files\Tetris</Filter>
+    </ClInclude>
+    <ClInclude Include="Tetris.h">
+      <Filter>Header Files\Tetris</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomGenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tetrimino.h">
+      <Filter>Header Files\Tetris</Filter>
+    </ClInclude>
+    <ClInclude Include="MathHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomBag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureObject.h">
+      <Filter>Header Files\OpenGLWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="IDrawable.h">
+      <Filter>Header Files\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Quadrilateral.h">
+      <Filter>Header Files\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="TexturedQuadrilateral.h">
+      <Filter>Header Files\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangle.h">
+      <Filter>Header Files\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle.h">
+      <Filter>Header Files\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="FontRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageSystem.h">
+      <Filter>Header Files\Tetris</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreSystem.h">
+      <Filter>Header Files\Tetris</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\fragment_shader.frag" />
+    <None Include="resources\vertex_shader.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Tetris.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="tetris_icon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
