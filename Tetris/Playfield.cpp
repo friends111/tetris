@@ -111,7 +111,7 @@ namespace Tetris
         return glm::ivec2(this->width, this->height);
     }
 
-    void Playfield::draw(std::shared_ptr<ShaderProgram> shader_program)
+    void Playfield::draw(std::shared_ptr<OpenGLWrapper::ShaderProgram> shader_program)
     {
         this->board_background_border.draw(shader_program);
         this->board_background.draw(shader_program);

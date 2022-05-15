@@ -11,14 +11,14 @@ namespace Tetris
 		this->color = color;
 	}
 
-	void Monomino::draw(std::shared_ptr<ShaderProgram> shader_program, std::shared_ptr<Playfield> playfield)
+	void Monomino::draw(std::shared_ptr<OpenGLWrapper::ShaderProgram> shader_program, std::shared_ptr<Playfield> playfield)
 	{
 		glm::ivec2 final_pos = this->getFinalPos();
 		glm::vec2 render_pos = playfield->gridToScreenCoordinates(final_pos.x, final_pos.y);
 		this->draw(shader_program, playfield, render_pos);
 	}
 
-	void Monomino::draw(std::shared_ptr<ShaderProgram> shader_program, std::shared_ptr<Playfield> playfield, glm::vec2 render_pos)
+	void Monomino::draw(std::shared_ptr<OpenGLWrapper::ShaderProgram> shader_program, std::shared_ptr<Playfield> playfield, glm::vec2 render_pos)
 	{
 		if (!this->initialized)
 		{

@@ -12,8 +12,8 @@ namespace Tetris
 	public:
 		Monomino();
 		Monomino(glm::vec4 color);
-		void draw(std::shared_ptr<ShaderProgram> shader_program, std::shared_ptr<Playfield> playfield);
-		void draw(std::shared_ptr<ShaderProgram> shader_program, std::shared_ptr<Playfield> playfield, glm::vec2 render_pos);
+		void draw(std::shared_ptr<OpenGLWrapper::ShaderProgram> shader_program, std::shared_ptr<Playfield> playfield);
+		void draw(std::shared_ptr<OpenGLWrapper::ShaderProgram> shader_program, std::shared_ptr<Playfield> playfield, glm::vec2 render_pos);
 		void moveTo(int x, int y);
 		void moveFor(int x, int y);
 		void setColor(glm::vec4 color);

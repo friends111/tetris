@@ -13,8 +13,6 @@
 #include "MathHelper.h"
 #include "Rectangle.h"
 
-using namespace OpenGLWrapper;
-
 class FontRenderer
 {
 public:
@@ -217,13 +215,13 @@ protected:
 	};
 
 private:
-	std::shared_ptr<TextureObject> texture;
+	std::shared_ptr<OpenGLWrapper::TextureObject> texture;
 	float texture_width = 0;
 	float texture_height = 0;
 	GlyphCache glyphs;
-	std::unique_ptr<VertexArrayObject> VAO = std::make_unique<VertexArrayObject>();
-	std::unique_ptr<VertexBufferObject> VBO = std::make_unique<VertexBufferObject>();
-	std::unique_ptr<IndicesBufferObject> IBO = std::make_unique<IndicesBufferObject>();
+	std::unique_ptr<OpenGLWrapper::VertexArrayObject> VAO = std::make_unique<OpenGLWrapper::VertexArrayObject>();
+	std::unique_ptr<OpenGLWrapper::VertexBufferObject> VBO = std::make_unique<OpenGLWrapper::VertexBufferObject>();
+	std::unique_ptr<OpenGLWrapper::IndicesBufferObject> IBO = std::make_unique<OpenGLWrapper::IndicesBufferObject>();
 	std::vector<glm::vec3> vertices;
 	std::vector<glm::ivec3> indices;
 	std::vector<glm::vec2> uv_coords;
@@ -231,8 +229,8 @@ private:
 	bool init();
 public:
 	friend std::string operator*(SpecialSymbol&& symbol);
-	bool init(std::shared_ptr<TextureObject> texture);
-	void renderText(std::shared_ptr<ShaderProgram> shader_program, const std::string text, glm::ivec2 pos, float size = 1.0f, glm::vec4 color = glm::vec4(1.0f, 1.0f, 1.0f, 1.0f), TextAlignment align = TextAlignment::LEFT);
+	bool init(std::shared_ptr<OpenGLWrapper::TextureObject> texture);
+	void renderText(std::shared_ptr<OpenGLWrapper::ShaderProgram> shader_program, const std::string text, glm::ivec2 pos, float size = 1.0f, glm::vec4 color = glm::vec4(1.0f, 1.0f, 1.0f, 1.0f), TextAlignment align = TextAlignment::LEFT);
 };
 
 inline FontRenderer::GlyphCache::GlyphCache()

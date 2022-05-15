@@ -105,7 +105,7 @@ bool OpenGLWindow::initGlfw()
 
 bool OpenGLWindow::initShaders()
 {
-    this->shader_program = std::make_shared<ShaderProgram>();
+    this->shader_program = std::make_shared<OpenGLWrapper::ShaderProgram>();
     if (this->shader_program->init(this->resources_path + "vertex_shader.vert", this->resources_path + "fragment_shader.frag"))
     {
         glUseProgram(this->shader_program->getPos());
@@ -173,7 +173,7 @@ bool OpenGLWindow::initFontRenderer()
 
     this->font_renderer = std::make_shared<FontRenderer>();
 
-    if (!this->font_renderer->init(std::make_shared<TextureObject>(this->font_texture)))
+    if (!this->font_renderer->init(std::make_shared<OpenGLWrapper::TextureObject>(this->font_texture)))
     {
         return false;
     }
@@ -242,6 +242,7 @@ void OpenGLWindow::mainLoop()
         clock::time_point now = clock::now();
         fsec diff = now - this->last_render;
 
+        //glfwPollEvents();
         this->tetris->process();
 
         if (diff.count() < hz)
@@ -258,21 +259,6 @@ void OpenGLWindow::mainLoop()
     }
 
     this->tetris->stop();
-}
-
-void OpenGLWindow::logicLoop()
-{
-    while (true)
-    {
-        if (this != nullptr && this->tetris != nullptr && !this->tetris->hasStopped())
-        {
-            this->tetris->process();
-        }
-        else
-        {
-            return;
-        }
-    }
 }
 
 void OpenGLWindow::render()

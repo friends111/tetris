@@ -332,7 +332,7 @@ namespace Tetris
 		return this->playfield->getBoardTopBoundary();
 	}
 
-	void Tetris::draw(std::shared_ptr<ShaderProgram> shader_program)
+	void Tetris::draw(std::shared_ptr<OpenGLWrapper::ShaderProgram> shader_program)
 	{
 		//std::cout << "[TETRIS]: Starting drawing..." << std::endl;
 		//mtx.lock();

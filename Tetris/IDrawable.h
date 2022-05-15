@@ -10,10 +10,10 @@
 #include <glm/gtx/quaternion.hpp>
 #include <memory>
 
-using namespace OpenGLWrapper;
-
 namespace Geometry
 {
+	using namespace OpenGLWrapper;
+
 	class IDrawable
 	{
 	protected:

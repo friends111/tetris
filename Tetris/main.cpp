@@ -3,7 +3,6 @@
 #endif
 #include "OpenGLWindow.h"
 
-#ifdef _WIN32
 int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _In_ LPSTR lpCmdLine, _In_ int nShowCmd)
 {
     try
@@ -23,7 +22,7 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 
     return 0;
 }
-#else
+
 int main(int argc, char* argv[])
 {
     try
@@ -40,4 +39,3 @@ int main(int argc, char* argv[])
 
     return 0;
 }
-#endif

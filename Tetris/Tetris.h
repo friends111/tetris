@@ -167,7 +167,7 @@ namespace Tetris
 		Tetris(int screen_width, int screen_height, irrklang::ISoundEngine* sound_engine, std::string sounds_path, std::shared_ptr<FontRenderer> font_renderer);
 		float getCellSize();
 		float getBoardTopBoundary();
-		void draw(std::shared_ptr<ShaderProgram> shader_program);
+		void draw(std::shared_ptr<OpenGLWrapper::ShaderProgram> shader_program);
 		void process();
 		bool hasGameStarted();
 		void stop();

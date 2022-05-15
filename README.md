@@ -10,8 +10,6 @@ There is no font cache, even though it could be used to optimize unnecessary rec
 There is no texture cache, because it uses only one texture. But again, if this was a bigger project that needed multiple textures, it would be wise to create a global texture cache (just for organization purposes).
 Uniform Buffer Objects and Uniform Blocks could also be used if there was much more uniform values needed to be updated.
 
-I haven't tried to compile the project on anything except Windows, even though there is some preprocessor code to potentially allow cross-platform compilation.
-
 ## Dependencies
 The following versions were used during development, but higher, compatible ones should also work. 
 * C++14

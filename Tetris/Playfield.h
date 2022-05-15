@@ -38,6 +38,6 @@ namespace Tetris
 		float getCellSize();
 		float getBoardTopBoundary();
 		glm::ivec2 getSize();
-		void draw(std::shared_ptr<ShaderProgram> shader_program);
+		void draw(std::shared_ptr<OpenGLWrapper::ShaderProgram> shader_program);
 	};
 }

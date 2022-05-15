@@ -68,7 +68,7 @@ std::string operator*(FontRenderer::SpecialSymbol&& symbol)
 	return "%" + std::to_string(static_cast<int>(symbol)) + "%";
 }
 
-bool FontRenderer::init(std::shared_ptr<TextureObject> texture)
+bool FontRenderer::init(std::shared_ptr<OpenGLWrapper::TextureObject> texture)
 {
 	this->texture = texture;
 	this->texture_width = static_cast<float>(this->texture->getWidth());
@@ -76,7 +76,7 @@ bool FontRenderer::init(std::shared_ptr<TextureObject> texture)
 	return this->init();
 }
 
-void FontRenderer::renderText(std::shared_ptr<ShaderProgram> shader_program, const std::string text, glm::ivec2 pos, float size, glm::vec4 color, TextAlignment align)
+void FontRenderer::renderText(std::shared_ptr<OpenGLWrapper::ShaderProgram> shader_program, const std::string text, glm::ivec2 pos, float size, glm::vec4 color, TextAlignment align)
 {
 	if (shader_program == nullptr)
 	{

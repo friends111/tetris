@@ -7,6 +7,7 @@
 #include "ShaderProgram.h"
 #include <glm/glm.hpp>
 #include "Triangle.h"
+#include <chrono>
 #include "Tetris.h"
 #include <irrKlang.h>
 #include "TextureObject.h"
@@ -24,9 +25,9 @@ public:
 	~OpenGLWindow();
 private:
 	irrklang::ISoundEngine* sound_engine = nullptr;	//irrklang conflicts with shared_ptr etc. memory handling, so raw pointer it is
-	std::shared_ptr<ShaderProgram> shader_program;
+	std::shared_ptr<OpenGLWrapper::ShaderProgram> shader_program;
 	std::shared_ptr<FontRenderer> font_renderer;
-	TextureObject font_texture;
+	OpenGLWrapper::TextureObject font_texture;
 	std::vector<unsigned char> font_texture_data;
 	const int window_width = 1024;
 	const int window_height = 768;
@@ -50,7 +51,6 @@ private:
 	void updateProjectionMatrix();
 	static void onGlfwError(int error, const char* description);
 	void mainLoop();
-	void logicLoop();
 	void render();
 	static void onGlfwKeyPress(GLFWwindow* window, int key, int scancode, int action, int mods);
 };
